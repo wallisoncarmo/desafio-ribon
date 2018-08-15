@@ -37,9 +37,9 @@ export default class Main extends React.Component {
     addTask(){
         let d = new Date();
         let obj = {
-            'date':d.getFullYear()+
+            'date':d.getDate()+
             "/"+(d.getMonth()+1) +
-            "/"+ d.getDate(),
+            "/"+ d.getFullYear(),
             'task': this.state.taskText,
             "status":false
         };
